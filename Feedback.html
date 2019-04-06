@@ -22,59 +22,57 @@
         
         do                                                                                 
         { // Prompts user to enter rating number 1-5 
-			numberIn = window.prompt( "Please rate my page from 1 (worst) to 5 (best):" );			
-			numberInRemainder = numberIn % 1;
+		numberIn = window.prompt( "Please rate my page from 1 (worst) to 5 (best):" );			
+		numberInRemainder = numberIn % 1;
 			
-			
-			if (numberInRemainder == 0)
-			{ // Check to see if user entered a decimal, if so leave rating as 0 to prompt error message
-				rating = parseInt(numberIn);											   
-			}
-			
-			
-			if (rating == 1 || rating == 2 || rating == 3 || rating == 4 || rating == 5)   
-			{ // Verifies entered value is numeric between 1-5, including 1 & 5 
-				continue;                                                                  
-			}
- 			else                                                                           
-			{                                                                              
-				rating = 0;
-				window.alert("Rating value entered is not valid!  Please re-enter");       
-			}			
- 		} while ( rating == 0 ); 		 
+		if (numberInRemainder == 0)
+		{ // Check to see if user entered a decimal, if so leave rating as 0 to prompt error message
+			rating = parseInt(numberIn);											   
+		}
+						
+		if (rating == 1 || rating == 2 || rating == 3 || rating == 4 || rating == 5)   
+		{ // Verifies entered value is numeric between 1-5, including 1 & 5 
+			continue;                                                                  
+		}
+ 		else                                                                           
+		{                                                                              
+			rating = 0;
+			window.alert("Rating value entered is not valid!  Please re-enter");       
+		}			
+ 	} while ( rating == 0 ); 		 
 		 
         
         switch (rating)                                                                        
-		{ // Thanks the user for rating the page and displays message to user based on rating 
-			case 1:
-				document.writeln(
-				"<h1>Thank you for your " + rating + " rating.  It looks like I have " + 
-				    "a lot of improvements to make.</h1>" );
-				break;
-			case 2:
-				document.writeln( 
-				"<h1>Thank you for your " + rating + " rating.  It looks like I " + 
-				    "have some improvements to make.</h1>" );
-				break;
-			case 3:
-				document.writeln( 
-				"<h1>Thank you for your " + rating + " rating.  Ok not bad, " + 
-				    "but it looks like the page can still use some improvements.</h1>" );
-				break;
-			case 4:
-				document.writeln( 
-				"<h1>Thank you for your " + rating + " rating.  Almost there, but maybe " + 
-				    "a few more tweaks can help.</h1>" );
-				break;
-			case 5:
-				document.writeln( 
-				"<h1>Thank you for your " + rating + " rating.  Great,  I'm so glad you " + 
-				    "liked it!</h1>" );
-				break;
-			default:
-				document.writeln( 
-				"<h1>Uh-oh.  It appears this page is broke.</h1>" );
-		}
+	{ // Thanks the user for rating the page and displays message to user based on rating 
+		case 1:
+			document.writeln(
+			"<h1>Thank you for your " + rating + " rating.  It looks like I have " + 
+			    "a lot of improvements to make.</h1>" );
+			break;
+		case 2:
+			document.writeln( 
+			"<h1>Thank you for your " + rating + " rating.  It looks like I " + 
+			    "have some improvements to make.</h1>" );
+			break;
+		case 3:
+			document.writeln( 
+			"<h1>Thank you for your " + rating + " rating.  Ok not bad, " + 
+			    "but it looks like the page can still use some improvements.</h1>" );
+			break;
+		case 4:
+			document.writeln( 
+			"<h1>Thank you for your " + rating + " rating.  Almost there, but maybe " + 
+			    "a few more tweaks can help.</h1>" );
+			break;
+		case 5:
+			document.writeln( 
+			"<h1>Thank you for your " + rating + " rating.  Great,  I'm so glad you " + 
+			    "liked it!</h1>" );
+			break;
+		default:
+			document.writeln( 
+			"<h1>Uh-oh.  It appears this page is broke.</h1>" );
+	}
 
       </script>
    </head><body class="background2"></body>
