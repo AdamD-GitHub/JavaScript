@@ -1,14 +1,9 @@
-/*  JavaScript 6th Edition
-    Chapter 10
-    Hands-on Project 10-2
-
+/* 
     Author: Adam D (S0854801)
     Date: 04/09/2019  
-	Revisions:
+    Revisions:
 	.1 - Added support for touch events
 	.2 - enhanced app to support pointer events
-
-    Filename: script.js
 */
 
 "use strict";
