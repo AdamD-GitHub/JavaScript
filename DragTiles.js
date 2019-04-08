@@ -2,7 +2,7 @@
     Chapter 10
     Hands-on Project 10-2
 
-    Author: Adam Diel (S0854801)
+    Author: Adam D (S0854801)
     Date: 04/09/2019  
 	Revisions:
 	.1 - Added support for touch events
