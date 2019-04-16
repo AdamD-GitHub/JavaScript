@@ -1,5 +1,5 @@
 /* 
-    Author: Adam D (S0854801)
+    Author: Adam D 
     Date: 04/09/2019  
     Revisions:
 	.1 - Added support for touch events
